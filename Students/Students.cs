@@ -22,34 +22,34 @@ namespace Students
         //
         // SAMPLE DATA
         //
-        protected virtual void AddDummies()
-        {
-            Table.Rows.Add(
-                Table.NewRow().ItemArray = new object[]
-                {
-                    -4, "John", "Doe", "john@doe.com", "12345"
-                });
-            Table.Rows.Add(
-                Table.NewRow().ItemArray = new object[]
-                {
-                    -3, "Adam", "Doe", "adam@doe.com", "12345"
-                });
-            Table.Rows.Add(
-                Table.NewRow().ItemArray = new object[]
-                {
-                    -2, "Doe", "John", "does@john.com", "12345"
-                });
-            Table.Rows.Add(
-                Table.NewRow().ItemArray = new object[]
-                {
-                    -1, "Eve", "Doe", "Eve@doe.com", "12345"
-                });
-            Table.Rows.Add(
-                Table.NewRow().ItemArray = new object[]
-                {
-                    0, "Doe", "Eve", "doe@eve.com", "12345"
-                });
-        }
+        // protected virtual void AddDummies()
+        // {
+        //     Table.Rows.Add(
+        //         Table.NewRow().ItemArray = new object[]
+        //         {
+        //             -4, "John", "Doe", "john@doe.com", "12345"
+        //         });
+        //     Table.Rows.Add(
+        //         Table.NewRow().ItemArray = new object[]
+        //         {
+        //             -3, "Adam", "Doe", "adam@doe.com", "12345"
+        //         });
+        //     Table.Rows.Add(
+        //         Table.NewRow().ItemArray = new object[]
+        //         {
+        //             -2, "Doe", "John", "does@john.com", "12345"
+        //         });
+        //     Table.Rows.Add(
+        //         Table.NewRow().ItemArray = new object[]
+        //         {
+        //             -1, "Eve", "Doe", "Eve@doe.com", "12345"
+        //         });
+        //     Table.Rows.Add(
+        //         Table.NewRow().ItemArray = new object[]
+        //         {
+        //             0, "Doe", "Eve", "doe@eve.com", "12345"
+        //         });
+        // }
 
         private void StudentsApplication_Load(object sender, EventArgs e)
         {
@@ -62,7 +62,7 @@ namespace Students
             Table.PrimaryKey = new[] { Table.Columns["ID"] };
 
             // adds sample entries to the table
-            AddDummies();
+            // AddDummies();
 
             dataGridViewStudents.DataSource = Table;
             dataGridViewStudents.AllowUserToAddRows = false;

@@ -187,11 +187,11 @@ namespace Students
                 writer.Write($"********** END OF {studentRecordTable.TableName} DATA **********");
 
                 // Dispose
-                writer.Dispose();
+                writer.Close();
             }
 
             // Dispose
-            saveFileDialog.Dispose();
+            stream.Close();
         }
 
         public static bool ImportMain()
